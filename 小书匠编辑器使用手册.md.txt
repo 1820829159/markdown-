@@ -1,0 +1,38 @@
+﻿---
+title: 小书匠编辑器使用手册
+tags: 小书匠,使用手册
+---
+
+[toc!】
+##### 用户注册接口
+****
++ ***用户注册***
+###### 接口信息
+***
+| 传入数据验证不重复后注册成功
+###### 请求
+>POST/indext.php/register
+
+字段|类型|含义
+--|:--:|---:
+jscode|string|jscode
+请求示例
+>{
+    &nbsp;&nbsp;&nbsp;"jscode":"string"
+	}
+	
+###### 响应
+data
+字段|类型|含义
+--|:--:|-:
+jscode|string|用户信息
+
+**登陆成功**
+>{
+&nbsp;&nbsp;&nbsp;&nbsp;"status":&nbsp;0;
+&nbsp;&nbsp;&nbsp;&nbsp;"info":"登陆成功";
+&nbsp;&nbsp;&nbsp;&nbsp;"data":{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"jscode":"xxxxx"
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+}
+
